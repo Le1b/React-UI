@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>React UI</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/font-awesome.css"/>
+    <script src="libs/react.js"></script>
+    <script src="libs/JSXTransformer.js"></script>
+    <style>
+        span.delete-btn {
+            visibility: hidden;
+            padding: 0 4px;
+            cursor: pointer;
+        }
+
+        tr:hover > td > span.delete-btn {
+            visibility: visible;
+        }
+
+        span.fa-arrows-v {
+            cursor: pointer;
+        }
+
+        div.col-md-2 {
+            border: 1px solid #ccc;
+            padding: 5px;
+            margin: 5px;
+            border-radius: 7px;
+            background-color: #eee;
+        }
+
+        div.col-md-9 {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+<div id="content"></div>
+
+<script type="text/jsx" src="src/form.js"></script>
+<script type="text/jsx" src="src/table.js"></script>
+<script type="text/jsx" src="src/personForm.js"></script>
+</body>
+</html>
